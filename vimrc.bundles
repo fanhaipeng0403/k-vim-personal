@@ -31,8 +31,12 @@ call plug#begin('~/.vim/bundle')
 
 " syntastic
 Plug 'scrooloose/syntastic'
+"历史记录
 Plug 'mbbill/undotree'
-
+"名言警句
+Plug 'mhinz/vim-startify'
+"缩进线
+Plug 'Yggdroot/indentLine'
 " Group dependencies, vim-snippets depends on ultisnips
 " 代码片段快速插入 (snippets中,是代码片段资源,需要学习)
 " Snippets are separated from the engine. Add this if you want them:
@@ -47,6 +51,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'Raimondi/delimitMate'
 " 自动补全html/xml标签
 Plug 'docunext/closetag.vim'
+"历史记录
 
 " quick edit
 " 快速注释
@@ -186,6 +191,7 @@ if count(g:bundle_groups, 'python')
     Plug 'hdima/python-syntax'
     Plug 'hynek/vim-python-pep8-indent'
     Plug 'Glench/Vim-Jinja2-Syntax'
+    Plug  'fisadev/vim-isort'
 endif
 
 if count(g:bundle_groups, 'php')
