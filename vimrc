@@ -702,4 +702,11 @@ highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 
-
+"无限回退
+let $VIMTEMP = $VIMFILES.'/tmp'
+if v:version >= 703
+set undofile
+set undodir=$VIMTEMP
+set undolevels=1000 "maximum number of changes that can be undone
+set undoreload=10000 "maximum number lines to save for undo on a buffer
+endif
