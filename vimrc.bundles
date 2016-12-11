@@ -29,6 +29,8 @@ call plug#begin('~/.vim/bundle')
 
 " 移动光标到插件名上, 使用'#'快速跳转到每个插件的配置处
 
+"格式化程序
+Plug 'Chiel92/vim-autoformat'
 " syntastic
 Plug 'scrooloose/syntastic'
 "历史记录
@@ -359,8 +361,9 @@ call plug#end()
 " YouCompleteMe {{{
     "youcompleteme  默认tab  s-tab 和自动补全冲突
     "let g:ycm_key_list_select_completion=['<c-n>']
-    let g:ycm_key_list_select_completion = ['<Down>']
-    "let g:ycm_key_list_previous_completion=['<c-p>']
+    " let g:ycm_key_list_select_completion = ['<Down>']
+    " let g:ycm_key_list_select_completion = ['tab']
+    let g:ycm_key_list_previous_completion=['tab']
     let g:ycm_key_list_previous_completion = ['<Up>']
     let g:ycm_complete_in_comments = 1  "在注释输入中也能补全
     let g:ycm_complete_in_strings = 1   "在字符串输入中也能补全
@@ -399,7 +402,7 @@ call plug#end()
 
 
 " ultisnips {{{
-    let g:UltiSnipsExpandTrigger       = "<tab>"
+    " let g:UltiSnipsExpandTrigger       = ""
     let g:UltiSnipsJumpForwardTrigger  = "<tab>"
     let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
     let g:UltiSnipsSnippetDirectories  = ['UltiSnips']
@@ -812,8 +815,8 @@ call plug#end()
     " Plug 'mindriot101/vim-yapf'
     " scriptencoding utf-8
     " let g:yapf_style = "google"
-    " let g:yapf_style = "pep8"
-    " setenv PYTHONIOENCODING UTF-8
+      " let g:yapf_style = "pep8"
+      " setenv PYTHONIOENCODING UTF-8
     " nnoremap <leader>y :call Yapf()<cr>
 " }}}
 
