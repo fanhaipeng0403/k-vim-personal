@@ -49,6 +49,8 @@ filetype plugin indent on
 " history存储容量
 set history=2000
 
+"让Vim自动把默认剪贴板和系统剪贴板的内容同步：
+set clipboard+=unnamed
 " 检测文件类型
 filetype on
 " 针对不同的文件类型采用不同的缩进格式
