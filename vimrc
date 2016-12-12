@@ -664,7 +664,8 @@ endif
 
 " Set extra options when running in GUI mode
 if has("gui_running")
-    set guifont=Monaco:h14
+    " set guifont=Monaco:h14
+    set guifont=Inconsolata:h29
     if has("gui_gtk2")   "GTK2
         " set guifont=Monaco\ 12,Monospace\ 12
     endif
@@ -682,11 +683,11 @@ endif
 
 
 " theme主题
-set background=dark
+" set background=dark
 set t_Co=256
 
-"colorscheme solarized
-colorscheme molokai
+colorscheme solarized
+" colorscheme molokai
 " colorscheme desert
 
 
