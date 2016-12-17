@@ -1,22 +1,5 @@
-"==========================================
-" Author:  wklken
-" Version: 9.1
-" Email: wklken@yeah.net
-" BlogPost: http://www.wklken.me
-" ReadMe: README.md
-" Donation: http://www.wklken.me/pages/donation.html
-" Last_modify: 2015-12-15
-" Sections:
-"       -> Initial Plugin 加载插件
-"       -> General Settings 基础设置
-"       -> Display Settings 展示/排版等界面格式设置
-"       -> FileEncode Settings 文件编码设置
-"       -> Others 其它配置
-"       -> HotKey Settings  自定义快捷键
-"       -> FileType Settings  针对文件类型的设置
-"       -> Theme Settings  主题设置
-"
-"       -> 插件配置和具体设置在vimrc.bundles中
+
+" 插件配置和具体设置在vimrc.bundles中
 "==========================================
 
 "==========================================
@@ -683,11 +666,11 @@ endif
 
 
 " theme主题
-" set background=dark
+set background=dark
 set t_Co=256
 
-colorscheme solarized
-" colorscheme molokai
+" colorscheme solarized
+colorscheme molokai
 " colorscheme desert
 
 
@@ -723,3 +706,11 @@ endif
 " command Wq wq
 " command Q q
 " command WQ wq
+"
+
+"个人使用jedi自动补全，修改默认的激活参数
+let g:jedi#completions_command = "<tab>"
+
+
+
+
