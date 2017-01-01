@@ -26,6 +26,8 @@ endif
 " ----------------------------------------------------------------------------
 
 call plug#begin('~/.vim/bundle')
+" 查找替换
+Plug 'EasyGrep'
 "格式化程序
 Plug 'Chiel92/vim-autoformat'
 " syntastic
