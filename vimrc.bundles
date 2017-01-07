@@ -56,8 +56,13 @@ call plug#begin('~/.vim/bundle')
 " -----------------------------------------------------------------------------------------------------------
 
 
-" Python 代码度量
+" Python 代码检查
 Plug 'vim-flake8'
+" flake8 (=Pyflakes+pep8)
+" Pyflakes只进行一些简单的逻辑检查，不做代码风格分析。
+" pep8则只进行 pep8 的风格检查。
+" 而flake8则将pep8和pyflakes的功能整合在一起了。
+
 
 " 查找替换
 Plug 'EasyGrep'
@@ -123,7 +128,7 @@ Plug 'gorodinskiy/vim-coloresque'
 " 代码自动补全
 " 迄今为止用到的最好的自动VIM自动补全插件
 " 重启 :YcmRestartServer
-" Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 
 
 
